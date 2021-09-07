@@ -13,11 +13,16 @@ btn.addEventListener('click',(e)=>{
         if(emailInput.classList.contains('error')){
             emailInput.classList.remove('error');
             emailInput.value = '';
+            if(document.querySelector('.input-div').querySelector('.wrong-input')){
+                document.querySelector('.input-div').querySelector('.wrong-input').remove();
+            }
+
         }
     } else {
         //doesn't work
         if(!emailInput.classList.contains('error')){
             emailInput.classList.add('error');
+            btn.insertAdjacentHTML('afterend', '<h4 class="wrong-input">please enter a valid email...</h4>');
         }
     }
 });

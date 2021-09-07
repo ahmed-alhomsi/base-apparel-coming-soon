@@ -82,6 +82,11 @@ p {
     border: solid 2px hsl(0, 93%, 68%);
 }
 
+.wrong-input {
+    color: hsl(0, 94%, 58%);
+    margin: 1em;
+}
+
 .email-btn {
     right: 5em;
     border-radius: 25px;
